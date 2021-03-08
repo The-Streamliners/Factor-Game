@@ -16,4 +16,8 @@
     <dimen name="main_menu_button_icon_height">match_parent</dimen>
     <dimen name="main_menu_button_icon_margin">10dp</dimen>
 
+<!--    loader styles-->
+    <dimen name="loader_text_size">20sp</dimen>
+    <dimen name="loader_spinner_height">100dp</dimen>
+    <dimen name="loader_spinner_width">100dp</dimen>
 </resources>
