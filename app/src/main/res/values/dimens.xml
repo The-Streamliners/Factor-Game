@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    main menu button text styles-->
+    <dimen name="main_menu_button_text_size">25sp</dimen>
+    <dimen name="main_menu_button_text_height">match_parent</dimen>
+    <dimen name="main_menu_button_text_width">wrap_content</dimen>
+
+<!--    Main Menu button styles-->
+    <dimen name="main_menu_button_width">340dp</dimen>
+    <dimen name="main_menu_button_height">60dp</dimen>
+    <dimen name="main_menu_button_margin">30dp</dimen>
+
+<!--    Main menu button's icon styles-->
+    <dimen name="main_menu_button_icon_width">50dp</dimen>
+    <dimen name="main_menu_button_icon_height">match_parent</dimen>
+    <dimen name="main_menu_button_icon_margin">10dp</dimen>
+
+</resources>
