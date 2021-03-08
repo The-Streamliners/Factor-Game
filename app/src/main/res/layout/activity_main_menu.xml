@@ -49,8 +49,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/main_menu_button_text_width"
-                android:layout_height="@dimen/main_menu_button_text_height"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
                 android:text="SINGLE PLAYER"
@@ -76,12 +76,12 @@
 
                 <ImageView
                     android:layout_width="@dimen/main_menu_button_icon_width"
-                    android:layout_height="@dimen/main_menu_button_icon_height"
+                    android:layout_height="match_parent"
                     android:layout_margin="@dimen/main_menu_button_icon_margin"
                     android:src="@drawable/ic_multiplayer" />
                 <TextView
-                    android:layout_width="@dimen/main_menu_button_text_width"
-                    android:layout_height="@dimen/main_menu_button_text_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="MULTIPLAYER"
@@ -100,8 +100,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/main_menu_button_text_width"
-                android:layout_height="@dimen/main_menu_button_text_height"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
                 android:text="PLAY ONLINE"
@@ -118,8 +118,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/main_menu_button_text_width"
-                android:layout_height="@dimen/main_menu_button_text_height"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
                 android:text="HOW TO PLAY"
@@ -144,13 +144,13 @@
 
                 <ImageView
                     android:layout_width="@dimen/main_menu_button_icon_width"
-                    android:layout_height="@dimen/main_menu_button_icon_height"
+                    android:layout_height="match_parent"
                     android:layout_margin="@dimen/main_menu_button_icon_margin"
                     android:src="@drawable/ic_exit" />
 
                 <TextView
-                    android:layout_width="@dimen/main_menu_button_text_width"
-                    android:layout_height="@dimen/main_menu_button_text_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:text="EXIT"
