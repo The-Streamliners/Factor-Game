@@ -17,4 +17,6 @@
     <dimen name="loader_text_size">20sp</dimen>
     <dimen name="loader_spinner_height">100dp</dimen>
     <dimen name="loader_spinner_width">100dp</dimen>
+<!--    Dialogue Box Styles-->
+    <dimen name="dialog_parent_padding_top">180dp</dimen>
 </resources>
