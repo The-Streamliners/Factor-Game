@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--Manually defined color-->
+    <color name="sky_blue">#03DAC5</color>
+
+<!--    spinner loaders colors-->
+    <color name="loader_spinner_color">@color/white</color>
+    <color name="loader_text_color">@color/white</color>
 </resources>

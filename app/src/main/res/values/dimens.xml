@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    main menu button text styles-->
+    <dimen name="main_menu_button_text_size">25sp</dimen>
+
+<!--    Main Menu button styles-->
+    <dimen name="main_menu_button_width">340dp</dimen>
+    <dimen name="main_menu_button_height">60dp</dimen>
+    <dimen name="main_menu_button_margin">30dp</dimen>
+
+<!--    Main menu button's icon styles-->
+    <dimen name="main_menu_button_icon_width">50dp</dimen>
+    <dimen name="main_menu_button_icon_margin">10dp</dimen>
+
+<!--    loader styles-->
+    <dimen name="loader_text_size">20sp</dimen>
+    <dimen name="loader_spinner_height">100dp</dimen>
+    <dimen name="loader_spinner_width">100dp</dimen>
+</resources>
