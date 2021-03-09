@@ -17,6 +17,12 @@
     <dimen name="loader_text_size">20sp</dimen>
     <dimen name="loader_spinner_height">100dp</dimen>
     <dimen name="loader_spinner_width">100dp</dimen>
+
 <!--    Dialogue Box Styles-->
     <dimen name="dialog_parent_padding_top">180dp</dimen>
+
+<!--    main menu about icon styles-->
+    <dimen name="main_menu_about_icon_width">40dp</dimen>
+    <dimen name="main_menu_about_icon_height">40dp</dimen>
+    <dimen name="main_menu_about_icon_margin">20dp</dimen>
 </resources>

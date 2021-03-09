@@ -32,180 +32,194 @@
             android:textSize="@dimen/loader_text_size" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="@dimen/main_menu_button_width"
-            android:layout_height="@dimen/main_menu_button_height"
-            android:id="@+id/single_player_button"
-            android:background="@drawable/main_menu_button"
-            android:layout_marginBottom="@dimen/main_menu_button_margin">
+        <ImageView
+            android:layout_width="@dimen/main_menu_about_icon_width"
+            android:layout_height="@dimen/main_menu_about_icon_height"
+            android:layout_marginEnd="@dimen/main_menu_about_icon_margin"
+            android:layout_marginTop="@dimen/main_menu_about_icon_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_info"/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/main_menu_button_width"
+                android:layout_height="@dimen/main_menu_button_height"
+                android:id="@+id/single_player_button"
                 android:background="@drawable/main_menu_button"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_marginBottom="@dimen/main_menu_button_margin">
 
-                <ImageView
-                    android:layout_width="@dimen/main_menu_button_icon_width"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/main_menu_button_icon_margin"
-                    android:src="@drawable/ic_single_player" />
-
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:text="SINGLE PLAYER"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/main_menu_button_text_size" />
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:background="@drawable/main_menu_button"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="@dimen/main_menu_button_width"
-            android:layout_height="@dimen/main_menu_button_height"
-            android:id="@+id/multiplayer_button"
-            android:background="@drawable/main_menu_button"
-            android:layout_marginBottom="@dimen/main_menu_button_margin">
+                    <ImageView
+                        android:layout_width="@dimen/main_menu_button_icon_width"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/main_menu_button_icon_margin"
+                        android:src="@drawable/ic_single_player" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:layout_width="@dimen/main_menu_button_icon_width"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/main_menu_button_icon_margin"
-                    android:src="@drawable/ic_multiplayer" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:text="MULTIPLAYER"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/main_menu_button_text_size" />
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="SINGLE PLAYER"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_menu_button_text_size" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="@dimen/main_menu_button_width"
-            android:layout_height="@dimen/main_menu_button_height"
-            android:id="@+id/play_online_button"
-            android:background="@drawable/main_menu_button"
-            android:layout_marginBottom="@dimen/main_menu_button_margin">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/main_menu_button_width"
+                android:layout_height="@dimen/main_menu_button_height"
+                android:id="@+id/multiplayer_button"
                 android:background="@drawable/main_menu_button"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_marginBottom="@dimen/main_menu_button_margin">
 
-                <ImageView
-                    android:layout_width="@dimen/main_menu_button_icon_width"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/main_menu_button_icon_margin"
-                    android:src="@drawable/ic_play_online" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:text="PLAY ONLINE"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/main_menu_button_text_size" />
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="@dimen/main_menu_button_width"
-            android:layout_height="@dimen/main_menu_button_height"
-            android:id="@+id/how_to_play_button"
-            android:background="@drawable/main_menu_button"
-            android:layout_marginBottom="@dimen/main_menu_button_margin">
+                    <ImageView
+                        android:layout_width="@dimen/main_menu_button_icon_width"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/main_menu_button_icon_margin"
+                        android:src="@drawable/ic_multiplayer" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="MULTIPLAYER"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_menu_button_text_size" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/main_menu_button_width"
+                android:layout_height="@dimen/main_menu_button_height"
+                android:id="@+id/play_online_button"
                 android:background="@drawable/main_menu_button"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_marginBottom="@dimen/main_menu_button_margin">
 
-                <ImageView
-                    android:layout_width="@dimen/main_menu_button_icon_width"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/main_menu_button_icon_margin"
-                    android:src="@drawable/ic_how_to_play" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:text="HOW TO PLAY"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/main_menu_button_text_size" />
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:background="@drawable/main_menu_button"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="@dimen/main_menu_button_width"
-            android:layout_height="@dimen/main_menu_button_height"
-            android:background="@drawable/main_menu_button"
-            android:id="@+id/exit_button" >
+                    <ImageView
+                        android:layout_width="@dimen/main_menu_button_icon_width"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/main_menu_button_icon_margin"
+                        android:src="@drawable/ic_play_online" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="PLAY ONLINE"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_menu_button_text_size" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <ImageView
-                    android:layout_width="@dimen/main_menu_button_icon_width"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/main_menu_button_icon_margin"
-                    android:src="@drawable/ic_exit" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/main_menu_button_width"
+                android:layout_height="@dimen/main_menu_button_height"
+                android:id="@+id/how_to_play_button"
+                android:background="@drawable/main_menu_button"
+                android:layout_marginBottom="@dimen/main_menu_button_margin">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:text="EXIT"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/main_menu_button_text_size" />
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+                    android:background="@drawable/main_menu_button"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/main_menu_button_icon_width"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/main_menu_button_icon_margin"
+                        android:src="@drawable/ic_how_to_play" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="HOW TO PLAY"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_menu_button_text_size" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/main_menu_button_width"
+                android:layout_height="@dimen/main_menu_button_height"
+                android:background="@drawable/main_menu_button"
+                android:id="@+id/exit_button" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/main_menu_button_icon_width"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/main_menu_button_icon_margin"
+                        android:src="@drawable/ic_exit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="EXIT"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/main_menu_button_text_size" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
