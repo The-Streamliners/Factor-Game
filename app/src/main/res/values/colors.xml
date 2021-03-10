@@ -14,4 +14,7 @@
 <!--    spinner loaders colors-->
     <color name="loader_spinner_color">@color/white</color>
     <color name="loader_text_color">@color/white</color>
+
+<!--    how to page-->
+    <color name="howtoplay_text_background_color">#151233</color>
 </resources>
